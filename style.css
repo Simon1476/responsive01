@@ -1,0 +1,56 @@
+/* Global */
+
+:root {
+    /* Color */
+
+     /* Font weight */
+     --weight-bold: 700;
+     --weight-semi-bold: 600;
+     --weight-regular: 400;
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+}
+
+/* Universal tags */
+* {
+    box-sizing: border-box;
+}
+
+/* Header */
+#header {
+    position: fixed;
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+}
+
+.menu {
+    display: flex;
+    font-size: var(--font-small);
+    font-weight: var(--weight-semi-bold);
+}
+
+.menu li {
+    padding: 8px 12px;
+}
+
+.menu li:hover {
+    background-color: beige;
+}
+.menu li a{
+    color: black;
+}
+.search i {
+    font-size: var(--font-regular);
+}
