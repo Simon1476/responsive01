@@ -28,6 +28,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
+    background: #fff;
 }
 
 .logo{
@@ -53,4 +55,122 @@
 }
 .search i {
     font-size: var(--font-regular);
+}
+
+
+.toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: var(--font-medium);
+
+}
+/* Home */
+
+.img_wrap {
+    position: relative;
+}
+
+.img_wrap .img_bg img {
+    width: 100%;
+    height: 700px;
+}
+
+.img_wrap .txt_wrap{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img_wrap .txt_wrap .txt_title {
+    position: relative;
+}
+.img_wrap .txt_wrap .txt_title::before {
+    position: absolute;
+    top: -35px;
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid black;
+    margin: 20px auto;
+}
+.img_wrap .txt_wrap .txt_title::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid black;
+    margin: 20px auto;
+}
+
+.img_wrap .txt_wrap .txt_title  {
+    text-align: center;
+}
+
+.img_wrap .txt_wrap .txt_title span {
+    display: inline-block;
+}
+
+.img_wrap .txt_wrap .txt_title span:first-child {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    margin-bottom: 5px;
+}
+
+.img_wrap .txt_wrap .txt_title span:last-child {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+}
+
+.img_wrap .txt_wrap .txt01 {
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: var(--weight-semi-bold);
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        /* Font size */
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-small: 14px;
+        --font-micro: 12px;
+    }
+    #header {
+        flex-direction: column;
+        position: relative;
+    }
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .menu li:hover {
+        background: black;
+    }
+
+    .menu li:hover  a{
+    
+        color: #ffd700;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .toggleBtn {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .img_wrap .txt_wrap .txt01 {
+        text-align: center;
+    }
 }
