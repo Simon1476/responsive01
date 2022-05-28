@@ -23,7 +23,7 @@
 
 /* Section common */
 .section {
-    padding: 50px;
+    padding: 100px;
     text-align: center;
     margin: auto;
 }
@@ -201,9 +201,52 @@
     border: 1px solid #d3d3d3;
 }
 
+/* Section_background */
+#background {
+    position: relative;
+    height: 500px;
+    background-image: url('./images/bg02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
 
+.bg_title {
+    position: absolute;
+    color: #fff;
+    font-size: var(--font-large);
+    bottom: 100px;
+    font-weight: var(--weight-bold);
+}
 
+/* Section_cardio */
 
+.cardio_list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.cardio_list li img {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+@media screen and (max-width: 1290px) {
+    .equipment_list {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cardio_list li img {
+        width: 250px;
+        height: 250px;
+    }
+}
 @media screen and (max-width: 768px) {
     :root {
         /* Font size */
@@ -252,6 +295,11 @@
     .equipment_list li img {
         width: 100%;
     }
+
+    .cardio_list {
+        flex-direction: column;
+    }
+    
     
 }
 
