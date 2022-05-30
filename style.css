@@ -284,6 +284,82 @@
     border: 1px solid rgb(53, 27, 27);
 }
 
+/* Section_backmuscles02 */
+#backmuscles02 {
+    position: relative;
+    height: 500px;
+    background-image: url('./images/bg04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+
+/* Section_shop */
+
+
+.shop_image img {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    
+}
+.shop_image a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: 1px solid #d3d3d3;
+}
+
+/* footer */
+#footer {
+    background: black;
+    color: #fff;
+    padding: 20px 50px;
+}
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+
+.footer_logo {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+}
+
+.footer_logo i {
+    font-size: var(--font-large);
+}
+.footer_policy {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_policy .footer_title {
+    margin-bottom: 10px;
+}
+.footer_policy a {
+    color: #fff;
+    line-height: 24px;
+}
+
+.footer_contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contact .footer_title {
+    margin-bottom: 10px;
+}
+.footer_contact a {
+    color: #fff;
+    line-height: 24px;
+}
 
 @media screen and (max-width: 1290px) {
     .equipment_list {
