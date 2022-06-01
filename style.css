@@ -455,7 +455,14 @@
         margin-right: 0;
     }
 
-   
+    .footer_container {
+        flex-direction: column;
+        padding: 20px 0;
+    }
     
+    .footer_policy,
+    .footer_contact {
+        margin-top: 20px;
+    }
 }
 
